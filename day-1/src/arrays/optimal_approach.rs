@@ -24,12 +24,13 @@ pub fn optimal_approach(mut arr: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
         }
     }
 
-    if arr[0][0] == 0 {
+    if row0 == 0 {
         for j in 0..arr[0].len() {
             arr[0][j] = 0;
         }
     }
-    if row0 == 0 {
+
+    if arr[0][0] == 0 {
         for r in &mut arr {
             r[0] = 0;
         }
