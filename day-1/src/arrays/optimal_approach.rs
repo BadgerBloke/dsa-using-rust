@@ -15,10 +15,7 @@ pub fn optimal_approach(mut arr: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
 
     for i in 1..arr.len() {
         for j in 1..arr[i].len() {
-            if arr[0][j] == 0 {
-                arr[i][j] = 0;
-            }
-            if arr[i][0] == 0 {
+            if arr[0][j] == 0 || arr[i][0] == 0 {
                 arr[i][j] = 0;
             }
         }
